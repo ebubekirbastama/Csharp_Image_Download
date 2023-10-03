@@ -14,15 +14,15 @@ Aşağıda, Bekra.ImageDownload kütüphanesini kullanarak bir resmi nasıl indi
 
 ```csharp
 using System.Drawing.Imaging;
-using MyImageLibrary;
+using BekraİmageDownload;
 
 class Program
 {
     static void Main()
     {
-        string imageUrl = "https://example.com/image.jpg";
-        string filename = "downloaded_image.jpg";
-        ImageFormat format = ImageFormat.Jpeg;
+        string imageUrl = "https://4.bp.blogspot.com/-i5PEHve8n4k/Xghl14diB2I/AAAAAAAACaU/QaMj0LUoeV4iJCbNMSZJ399s7j7kKMMtwCK4BGAYYCw/s1600/Ads%25C4%25B1z.webp";
+        string filename = "downloaded_image.jpg"; // İndirilen resmin dosya adı
+        ImageFormat format = ImageFormat.Jpeg; // İndirilen resmin formatı
 
         using (ImageDownloader downloader = new ImageDownloader())
         {
